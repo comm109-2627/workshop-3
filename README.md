@@ -1,4 +1,4 @@
-# Python Week 3 Assessed Workshop
+# Python Week 3 Workshop
 
 You may use the following cheat sheets if you need to look up any Python commands.
 
@@ -46,7 +46,7 @@ Write Python code to do the following, so that each creates one line of output:
 
 `The dog called ______ is _______ years old.`
 
-Where the correct values are inserted in to the sentence usign the stored variables. You can leave the name in lowerr-case.
+Where the correct values are inserted into the sentence using the stored variables. You can leave the name in lower-case.
 
 Run the code file in the terminal using command:
 
@@ -56,13 +56,12 @@ python workshop3_part1.py
 
 It should produce exactly 5 lines of output, with first line `Part 1:`, followed by lines that show the output created from the instructions above.
 
-Run the command:
+
+Save your work to GitHub by running the command below in the terminal:
 
 ```
 git_helper --save
 ```
-
-in the terminal to save your work to GitHub.
 
 ### Part 2: 
 
@@ -93,13 +92,12 @@ python workshop3_part2.py
 
 It should produce exactly 3 lines of output that show the output created from the instructions above.
 
-Run the command:
+
+Save your work to GitHub by running the command below in the terminal:
 
 ```
 git_helper --save
 ```
-
-in the terminal to save your work to GitHub.
 
 ***
 
@@ -128,13 +126,11 @@ python workshop3_part3.py
 
 It should produce exactly 7 lines of output, with first line `Part 3:`, followed by lines that show the output created from the instructions above.
 
-Run the command:
+Save your work to GitHub by running the command below in the terminal:
 
 ```
 git_helper --save
 ```
-
-in the terminal to save your work to GitHub.
 
 ### Part 4: While loops 
 
@@ -160,15 +156,30 @@ Start beneath this existing code. Write code that generates the same sequence bu
 
 The condition should work to stop the loop whatever value of `x` is set on the first line. 
 
-(If you try different values remember to change it back to `2` before submission).
+(If you try different values remember to change it back to `2` before saving on GitHub.)
+
+
+Save your work to GitHub by running the command below in the terminal:
+
+```
+git_helper --save
+```
 
 ---
 
-### Part 5: If statements  
+### Part 5: if-else statements  
+
+Work in a code file called `workshop3_part5.py`
+
+This should start with the following lines of code:
+
+```python
+print("Part 5:")
+```
 
 A company are writing software to run a bike hire company.
 
-The software stores information on the customer in three variables as shown below:
+The software stores information on the customer in three variables as illustrated in the example code below:
 
 ```python
 fullname = "A N Other"
@@ -176,13 +187,9 @@ age = 23
 height_cm = 155
 ```
 
-**2. i** 
-
-*If you are working in CodeSpaces work in file **`4b_part2_i.py`***
-
 To rent a bike customers have to be 18 or over.
 
-Start your file by copying in the code section that sets up the three customer variables.
+Copying in the code section that sets up the three customer variables.
 
 Write code that displays the message: 
 
@@ -197,13 +204,29 @@ This should display:
  - `deny rental` if the customer is under 18
  - `approve rental` if the customer is 18 or over
 
-Test your code with different values, but set the age back to `23` before submission.
+Test your code with different values, but set the age back to `23` before saving on GitHub.
+
+
+Save your work to GitHub by running the command below in the terminal:
+
+```
+git_helper --save
+```
 
 ---
 
-**2. ii**
+### Part 6: if-elif-else statements  
 
-*If you are working in CodeSpaces work in file **`4b_part2_ii.py`***
+Work in a code file called `workshop3_part6.py`
+
+This should start with the following lines of code:
+
+```python
+print("Part 6:")
+fullname = "A N Other"
+age = 23
+height_cm = 155
+```
 
 The bike rental company have three sizes of bike they hire out to customers
 
@@ -211,9 +234,7 @@ The bike rental company have three sizes of bike they hire out to customers
 **`M`** for customers between 140cm and 160cm inclusive
 **`L`** for customers larger than 160cm
 
-Start your file by copying in the code section that sets up the three customer variables.
-
-Write code that displays the message: 
+Add code to the file that displays the message: 
 
 ```
 finding size
@@ -225,15 +246,28 @@ Then write an `if`-`elif`-`else` block that displays the appropriate message fro
  - **`rent M bike`**
  - **`rent L bike`**
 
-Test your code with different values, but set the height back to `155` before submission.
+Test your code with different values, but set the height back to `155` before saving to GitHub.
+
+Save your work to GitHub by running the command below in the terminal:
+
+```
+git_helper --save
+```
+
+
 
 ---
 
-### Part 3: Dictionaries
+### Part 7: Storing information in a Dictionary
 
-**3. i**
+Work in a code file called `workshop3_part7.py`
 
-*If you are working in CodeSpaces work in file **`4b_part3_i.py`***
+This should start with the following lines of code:
+
+```python
+print("Part 7:")
+customer_data = []
+```
 
 Start with the following lines of code:
 
@@ -243,21 +277,39 @@ customer_data = []
 
 Now add code lines to:
 
- - create an empty Python dictionary called: `customer`
+ - create a Python dictionary called: `customer1` storing the following customer data:
+ 
+   key `fullname`, value `Ms Tall`
+   key `age`, value `23`
+   key `height_cm`, value `189`
+   
+ - create an **empty** Python dictionary called: `customer2`
  - store the following customer data into the dictionary:
  
-   key `fullname`, value `B Wiggins`
-   key `age`, value `45`
-   key `height_cm`, value `190`
+   key `fullname`, value `Mr Small`
+   key `age`, value `25`
+   key `height_cm`, value `132`
 
- - add the dictionary you created into the `customer_data` list
+ - store both dictionaries you created into the `customer_data` list
  - print the list to screen
+
+Save your work to GitHub by running the command below in the terminal:
+
+```
+git_helper --save
+```
 
 ---
 
-**3. ii**
+### Part 8: Accessing information in a Dictionary
 
-*If you are working in CodeSpaces work in file **`4b_part3_ii.py`***
+Work in a code file called `workshop3_part8.py`
+
+This should start with the following line of code:
+
+```python
+print("Part 8:")
+```
 
 The bike rental company store the level of stock in a python dictionary like the one below:
 
@@ -274,13 +326,74 @@ M 23
 L 17
 ```
 
-b) Edit your code so that it can also add the number of each type of the three bikes and display a final line:
+b) Edit your code so that it can also add up the number of each type of the three bikes and display a final line:
 
 ```
 total 50
 ```
 
----
+Save your work to GitHub by running the command below in the terminal:
+
+```
+git_helper --save
+```
+
+### Extension: Updating information in a Dictionary
+
+Work in a code file called `workshop3_part9.py`
+
+This should start with the following line of code:
+
+```python
+print("Part 9:")
+stock_levels = { "S": 10, "M": 23, "L": 17 }
+customer_list = []
+```
+
+Copy in the code to create customers 1 and 2 dictionaries you created earlier and store them in the customer list.
+
+Beneath this write Python code that processes each customer in the list, according to the following:
+
+ - display the stock levels e.g.
+
+```
+number of bikes in stock
+S 10
+M 23
+L 17
+total 50
+```
+
+- examine the customer information and allocate a bike from the stock if the rental is allowed.
+
+e.g. if a customer meets the age requirement and has height matching a medium bike, the code should decrease the count of `M` bikes in the stock level dictionary by 1, and add a `rental` entry to the customer dictionary in a new key
+
+`{ full name: ..., age: ..., height_cm: ..., rental: "M"}`
+
+- A rental registered in this way should be logged by the code displaying a message:
+
+`Rented ___ bike to ___.` inserting the bike size and customer name.
+
+- Where the rental is unsuccessful due to the age rule, your code should log either
+
+`No rental to ___ as they are under 18.` inserting the customer name.
+
+- Where the rental is unsuccessful due to the stock levels, your code should log
+
+`No rental to ___ as we have no ___ bikes in stock.` inserting the customer name and bike size.
+
+- After processing all the customers you should display the updated stock levels using the format above.
+
+Save your work to GitHub by running the command below in the terminal:
+
+```
+git_helper --save
+```
 
 ### Submitting your work
 
+Use the following command to build a zip of work you completed in the workshop that you can download to your computer.
+
+```
+git_helper --zip
+```
