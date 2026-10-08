@@ -3,8 +3,8 @@
 You may use the following cheat sheets if you need to look up any Python commands.
 
 https://github.com/phil-lewis-exe/PythonCheatSheets/blob/main/Week1_cheatsheet.md
-
 https://github.com/phil-lewis-exe/PythonCheatSheets/blob/main/Week2_cheatsheet.md
+https://github.com/phil-lewis-exe/PythonCheatSheets/blob/main/Week3_cheatsheet.md
 
 You should not need to use any other websites. 
 
@@ -338,9 +338,9 @@ Save your work to GitHub by running the command below in the terminal:
 git_helper --save
 ```
 
-### Extension: Updating information in a Dictionary
+### (Optional) Extension: Updating information in a Dictionary
 
-Work in a code file called `workshop3_part9.py`
+Work in a code file called `workshop3_extension.py`
 
 This should start with the following line of code:
 
@@ -389,6 +389,20 @@ Save your work to GitHub by running the command below in the terminal:
 ```
 git_helper --save
 ```
+
+### (Optional) Challenge: Coding a stock management system for bike rentals
+
+Work in a code file called `workshop3_challenge.py`
+
+Set up in Python a computer program that can track bike rentals. 
+
+It should have a dictionary to store the stock of bikes, a list of current customers, and a list of past customers.
+
+You should use an while loop that continually loops to register customer rentals / returns taking input from a store assistant.
+
+Think about the needs of a real shop and decide what customer information would need to be stored, and what the shop needs to track.
+
+
 
 ### Submitting your work
 
