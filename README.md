@@ -3,7 +3,9 @@
 You may use the following cheat sheets if you need to look up any Python commands.
 
 https://github.com/phil-lewis-exe/PythonCheatSheets/blob/main/Week1_cheatsheet.md
+
 https://github.com/phil-lewis-exe/PythonCheatSheets/blob/main/Week2_cheatsheet.md
+
 https://github.com/phil-lewis-exe/PythonCheatSheets/blob/main/Week3_cheatsheet.md
 
 You should not need to use any other websites. 
