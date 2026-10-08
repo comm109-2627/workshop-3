@@ -1,6 +1,15 @@
 # Python Week 3 Workshop
 
-You may use the following cheat sheets if you need to look up any Python commands.
+This workshop is focused the Python skills we have covered so far:
+
+ - strings and string formatting
+ - lists and dictionaries
+ - for and while loops
+ - conditional statements
+
+You should attempt the workshop tasks without using any external web sites or GenAI.
+
+Use the following cheat sheets if you need to look up any Python commands.
 
 https://github.com/phil-lewis-exe/PythonCheatSheets/blob/main/Week1_cheatsheet.md
 
@@ -8,14 +17,20 @@ https://github.com/phil-lewis-exe/PythonCheatSheets/blob/main/Week2_cheatsheet.m
 
 https://github.com/phil-lewis-exe/PythonCheatSheets/blob/main/Week3_cheatsheet.md
 
-You should not need to use any other websites. 
+
+After each task save your work to GitHub by running the command below in the terminal:
+
+```
+git_helper --save
+```
+
 
 ---
 
-## TASKS
+## Tasks
 
 
-### Part 1: 
+### Part 1: Variables and strings
 
 Work in a code file called `workshop3_part1.py`. It should start with the following line of code:
 
@@ -27,7 +42,7 @@ Next we are going to store some information about a pet dog called `gnasher`.
 
 **i)** Write a Python comment line containing: `Author: XXXXXXXX`
 
-**ii)** Write code to set up four variables as described in the table below using appropriate data types (i.e. do not store the numbers as strings):
+**ii)** Write code that sets up four variables as described in the table below using appropriate data types (i.e. do not store the numbers as strings):
 
 | variable name | stored data |
 |---------------|-------------|
@@ -36,36 +51,35 @@ Next we are going to store some information about a pet dog called `gnasher`.
 | age_year      | 4           |
 | h_cm          | 51.2        |
 
-Write Python code to do the following, so that each creates one line of output:
+Write code that does the following, so that each instruction creates one line of output:
 
-**iii)** Display the name of the owner, in title case (first letter capitalised).
+**iii)** Display the name of the owner in title case (first letter capitalised).
 
 **iv)** Display the name of the dog in upper case (all letters capitalised).
 
-**v)** Display the dogs height in inches (found by dividing its height in cm by 2.54)
+**v)** Display the dog's height in inches (found by dividing its height in cm by 2.54).
 
 **vi)** Use an f-string to display the following message:
 
 `The dog called ______ is _______ years old.`
 
-Where the correct values are inserted into the sentence using the stored variables. You can leave the name in lower-case.
+inserting the correct values from your stored variables. You can leave the name in lower case.
 
-Run the code file in the terminal using command:
+Run the code file in the terminal using the command:
 
 ```
 python workshop3_part1.py
 ```
 
-It should produce exactly 5 lines of output, with first line `Part 1:`, followed by lines that show the output created from the instructions above.
+It should produce exactly 5 lines of output, with first line `Part 1:`, followed by the output from the instructions above.
 
 
-Save your work to GitHub by running the command below in the terminal:
+Remember to save your code to GitHub using `git_helper --save` in the terminal before starting the next task. 
 
-```
-git_helper --save
-```
 
-### Part 2: 
+---
+
+### Part 2: Lists
 
 Work in a code file called `workshop3_part2.py`
 
@@ -76,34 +90,30 @@ print("Part 2:")
 people = ['fred', 'greta', 'hetty' ]
 ```
 
-Add four lines of code that do the following:
+Write four lines of code that do the following:
 
-**i)** Write code to add another entry `sam` at the end of the list.
+**i)** Write code that adds another item `sam` at the end of the list.
 
-**ii)** Write code to print the list `people` to screen.
+**ii)** Write code that displays the list `people` using the `print()` function.
 
-**iii)** Write code to display the length of the list.
+**iii)** Write code that displays the length of the list.
 
-**iv)** Write code to display the second item in the list.
+**iv)** Write code that displays the second item in the list.
 
-Run the code file using command. 
+Run the code file using the command:
 
 ```
 python workshop3_part2.py
 ```
 
-It should produce exactly 3 lines of output that show the output created from the instructions above.
+It should produce exactly 4 lines of output, with first line `Part 2:`, followed by the output from the instructions above.
 
 
-Save your work to GitHub by running the command below in the terminal:
+Once your code is working save it to GitHub.
 
-```
-git_helper --save
-```
+---
 
-***
-
-### Part 3: 
+### Part 3: For loops
 
 Work in a code file called `workshop3_part3.py`
 
@@ -114,25 +124,23 @@ print("Part 3:")
 values = [ 9, 33, 6, 21 ] 
 ```
 
-Now add code lines to do the following. 
+Write code that does the following:
 
-**i)** Insert the value `12` at the start of the list and display the updated list using the `print()` function, to show it has been updated and now stores `[12, 9, 33, 6, 21]`.
+**i)** Insert the value `12` at the start of the list and display the updated list using the `print()` function, to confirm it has been updated and now stores `[12, 9, 33, 6, 21]`.
 
-**ii)** Use a `for` loop to run over the list and display the result of dividing each entry by 3. so that it displays the values 4, 3, 11, 2, 7 each on a separate line
+**ii)** Use a `for` loop to run over the list and display the result of dividing each item by 3, so that it displays the values 4.0, 3.0, 11.0, 2.0, 7.0 each on a separate line.
 
-Run the code file using command. 
+Run the code file using the command:
 
 ```
 python workshop3_part3.py
 ```
 
-It should produce exactly 7 lines of output, with first line `Part 3:`, followed by lines that show the output created from the instructions above.
+It should produce exactly 7 lines of output, with first line `Part 3:`, followed by the output from the instructions above.
 
-Save your work to GitHub by running the command below in the terminal:
+Once your code is working save it to GitHub.
 
-```
-git_helper --save
-```
+---
 
 ### Part 4: While loops 
 
@@ -152,20 +160,20 @@ The starter code uses a `for` loop to generate 15 values in a sequence.
 
 Try the code out to see its output.
 
-Start beneath this existing code. Write code that generates the same sequence but using a while loop. Set the condition to stop looping once `x` is greater or equal to 2000.
+Start beneath this existing code. Notice that the `for` loop has changed the value stored in `x`, so first add a line  `x = 2` to set the starting value back to `2`. 
 
-(i.e. so the last value printed is the last one in the sequence that is below 2000).
+Next write code that generates the same sequence using a `while` loop, stopping once `x` is greater than or equal to 2000, so that the last value displayed is below 2000.
 
-The condition should work to stop the loop whatever value of `x` is set on the first line. 
+The condition should ensure that for any positive starting value of `x` the code will generate a doubling sequence that continues until the stopping condition is met (next `x` would be greater or equal to 2000). 
 
-(If you try different values remember to change it back to `2` before saving on GitHub.)
-
-
-Save your work to GitHub by running the command below in the terminal:
+Run the code file using the command:
 
 ```
-git_helper --save
+python workshop3_part4.py
 ```
+
+Once your code is working save it to GitHub. If you tried different starting values, remember to change them back to `2` before saving on GitHub.
+
 
 ---
 
@@ -173,15 +181,15 @@ git_helper --save
 
 Work in a code file called `workshop3_part5.py`
 
-This should start with the following lines of code:
+This should start with the following line of code:
 
 ```python
 print("Part 5:")
 ```
 
-A company are writing software to run a bike hire company.
+A bike hire company is developing software to manage its rentals.
 
-The software stores information on the customer in three variables as illustrated in the example code below:
+The software stores information on each customer in three variables, as illustrated in the example code below:
 
 ```python
 fullname = "A N Other"
@@ -189,9 +197,9 @@ age = 23
 height_cm = 155
 ```
 
-To rent a bike customers have to be 18 or over.
+To hire a bike, customers must be 18 or over.
 
-Copying in the code section that sets up the three customer variables.
+Copy the code that sets up the three customer variables into your file.
 
 Write code that displays the message: 
 
@@ -199,21 +207,20 @@ Write code that displays the message:
 checking age
 ```
 
-Then write an `if` statement that displays a message based on their stored age.
+Then write an `if` statement that displays a message based on the customer's stored age.
 
 This should display:
 
  - `deny rental` if the customer is under 18
  - `approve rental` if the customer is 18 or over
 
+Run the code file using the command:
+
+```
+python workshop3_part5.py
+```
+
 Test your code with different values, but set the age back to `23` before saving on GitHub.
-
-
-Save your work to GitHub by running the command below in the terminal:
-
-```
-git_helper --save
-```
 
 ---
 
@@ -230,32 +237,29 @@ age = 23
 height_cm = 155
 ```
 
-The bike rental company have three sizes of bike they hire out to customers
+The bike hire company has three sizes of bike to hire out to customers:
 
-**`S`** for customers smaller than 140cm
-**`M`** for customers between 140cm and 160cm inclusive
-**`L`** for customers larger than 160cm
+ - **`S`** for customers smaller than 140cm
+ - **`M`** for customers between 140cm and 160cm inclusive
+ - **`L`** for customers larger than 160cm
 
-Add code to the file that displays the message: 
+Write code that displays the message: 
 
 ```
 finding size
 ```
 
-Then write an `if`-`elif`-`else` block that displays the appropriate message from the below according to the stored height.
+Then write an `if`-`elif`-`else` block that displays the appropriate message below according to the stored height:
 
  - **`rent S bike`** 
  - **`rent M bike`**
  - **`rent L bike`**
 
-Test your code with different values, but set the height back to `155` before saving to GitHub.
-
-Save your work to GitHub by running the command below in the terminal:
+Run the code file using the command, and save your work to GitHub when completed.
 
 ```
-git_helper --save
+python workshop3_part6.py
 ```
-
 
 
 ---
@@ -271,35 +275,34 @@ print("Part 7:")
 customer_data = []
 ```
 
-Start with the following lines of code:
+Write code that does the following:
 
-```python
-customer_data = []
-```
-
-Now add code lines to:
-
- - create a Python dictionary called: `customer1` storing the following customer data:
+**i)** Create a Python dictionary called `customer1` storing the following customer data:
  
    key `fullname`, value `Ms Tall`
    key `age`, value `23`
    key `height_cm`, value `189`
    
- - create an **empty** Python dictionary called: `customer2`
- - store the following customer data into the dictionary:
+**ii)** Create an **empty** Python dictionary called `customer2`.
+
+**iii)** Add the following customer data to `customer2`, one key at a time:
  
    key `fullname`, value `Mr Small`
    key `age`, value `25`
    key `height_cm`, value `132`
 
- - store both dictionaries you created into the `customer_data` list
- - print the list to screen
+**iv)** Store both dictionaries in the `customer_data` list.
 
-Save your work to GitHub by running the command below in the terminal:
+**v)** Display the list using the `print()` function.
+
+As in Part 1, use appropriate data types (i.e. do not store the numbers as strings).
+
+Run the code file using the command, and save your work to GitHub when completed.
 
 ```
-git_helper --save
+python workshop3_part7.py
 ```
+
 
 ---
 
@@ -313,13 +316,13 @@ This should start with the following line of code:
 print("Part 8:")
 ```
 
-The bike rental company store the level of stock in a python dictionary like the one below:
+The bike hire company stores its stock levels in a Python dictionary like the one below:
 
 ```python
 stock_levels = { "S": 10, "M": 23, "L": 17 }
 ```
 
-a) Starting with this line that defines the dictionary, write Python code that loops over the entries to produce a stock report in the following format:
+**i)** Starting with this line that defines the dictionary, write code that loops over the entries to produce a stock report in the following format:
 
 ```
 number of bikes in stock
@@ -328,35 +331,40 @@ M 23
 L 17
 ```
 
-b) Edit your code so that it can also add up the number of each type of the three bikes and display a final line:
+**ii)** Edit your code so that it also calculates the total number of bikes in stock and displays a final line:
 
 ```
 total 50
 ```
 
-Save your work to GitHub by running the command below in the terminal:
+Run the code file using the command, and save your work to GitHub when completed.
 
 ```
-git_helper --save
+python workshop3_part8.py
 ```
+
+
+---
 
 ### (Optional) Extension: Updating information in a Dictionary
 
 Work in a code file called `workshop3_extension.py`
 
-This should start with the following line of code:
+This should start with the following lines of code:
 
 ```python
-print("Part 9:")
+print("Extension:")
 stock_levels = { "S": 10, "M": 23, "L": 17 }
-customer_list = []
+customer_data = []
 ```
 
-Copy in the code to create customers 1 and 2 dictionaries you created earlier and store them in the customer list.
+Copy the code that creates the `customer1` and `customer2` dictionaries from Part 7 into your file, and store them in the `customer_data` list.
 
-Beneath this write Python code that processes each customer in the list, according to the following:
+Also create a third customer dictionary `customer3` with key `fullname`, value `Miss Young`, key `age`, value `16` and key `height_cm`, value `150`, and add it to the end of the list.
 
- - display the stock levels e.g.
+Beneath this, write code that does the following:
+
+**i)** Display the stock levels, for example:
 
 ```
 number of bikes in stock
@@ -366,49 +374,56 @@ L 17
 total 50
 ```
 
-- examine the customer information and allocate a bike from the stock if the rental is allowed.
+**ii)** Process each customer in the list, allocating a bike from the stock if the hire is allowed. Check the age rule first, then the stock levels.
 
-e.g. if a customer meets the age requirement and has height matching a medium bike, the code should decrease the count of `M` bikes in the stock level dictionary by 1, and add a `rental` entry to the customer dictionary in a new key
+For example, if a customer meets the age requirement and has a height matching a medium bike, the code should decrease the count of `M` bikes in the stock level dictionary by 1, and add a new key `rental` to the customer dictionary:
 
-`{ full name: ..., age: ..., height_cm: ..., rental: "M"}`
+`{ fullname: ..., age: ..., height_cm: ..., rental: "M"}`
 
-- A rental registered in this way should be logged by the code displaying a message:
+Your code should log the outcome for each customer by displaying one of the following messages:
 
-`Rented ___ bike to ___.` inserting the bike size and customer name.
+ - Where the hire is successful:
 
-- Where the rental is unsuccessful due to the age rule, your code should log either
+   `Rented ___ bike to ___.` inserting the bike size and customer name.
 
-`No rental to ___ as they are under 18.` inserting the customer name.
+ - Where the hire is unsuccessful due to the age rule:
 
-- Where the rental is unsuccessful due to the stock levels, your code should log
+   `No rental to ___ as they are under 18.` inserting the customer name.
 
-`No rental to ___ as we have no ___ bikes in stock.` inserting the customer name and bike size.
+ - Where the hire is unsuccessful due to the stock levels:
 
-- After processing all the customers you should display the updated stock levels using the format above.
+   `No rental to ___ as we have no ___ bikes in stock.` inserting the customer name and bike size.
 
-Save your work to GitHub by running the command below in the terminal:
+**iii)** After processing all the customers, display the updated stock levels using the format above.
 
-```
-git_helper --save
-```
+You can test your code by setting one of the stock levels to `0`, and changing customer details but set them back to the values above before saving on GitHub.
 
-### (Optional) Challenge: Coding a stock management system for bike rentals
+
+---
+
+### (Optional) Challenge: Coding a stock management system for bike hire
 
 Work in a code file called `workshop3_challenge.py`
 
-Set up in Python a computer program that can track bike rentals. 
+Write a Python program that can track bike hire. 
 
 It should have a dictionary to store the stock of bikes, a list of current customers, and a list of past customers.
 
-You should use an while loop that continually loops to register customer rentals / returns taking input from a store assistant.
+You should use a `while` loop that runs continually to register hires and returns, taking input from a store assistant.
 
 Think about the needs of a real shop and decide what customer information would need to be stored, and what the shop needs to track.
 
+Hint: your loop will need a way for the store assistant to quit (e.g. typing `q`), and your code should check the input it is given so that a typing mistake does not crash the program.
 
+---
 
 ### Submitting your work
 
-Use the following command to build a zip of work you completed in the workshop that you can download to your computer.
+Use the following command to build a zip of the work you completed in the workshop. 
+
+You will see the created file in the file panel. 
+
+Right click on the zip file to download a copy to your computer.
 
 ```
 git_helper --zip
