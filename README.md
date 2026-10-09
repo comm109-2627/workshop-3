@@ -17,13 +17,17 @@ https://github.com/phil-lewis-exe/PythonCheatSheets/blob/main/Week2_cheatsheet.m
 
 https://github.com/phil-lewis-exe/PythonCheatSheets/blob/main/Week3_cheatsheet.md
 
+To test your code as you write it, run the following command in the lower terminal panel (change to the filename you are testing):
+
+```
+python workshop3_part1.py
+```
 
 After each task save your work to GitHub by running the command below in the terminal:
 
 ```
-git_helper --save
+git_helper --commit
 ```
-
 
 ---
 
@@ -74,7 +78,7 @@ python workshop3_part1.py
 It should produce exactly 5 lines of output, with first line `Part 1:`, followed by the output from the instructions above.
 
 
-Remember to save your code to GitHub using `git_helper --save` in the terminal before starting the next task. 
+Remember to save your code to GitHub using `git_helper --commit` in the terminal before starting the next task. 
 
 
 ---
