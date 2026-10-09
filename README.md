@@ -409,7 +409,13 @@ Write a Python program that can track bike hire.
 
 It should have a dictionary to store the stock of bikes, a list of current customers, and a list of past customers.
 
-You should use a `while` loop that runs continually to register hires and returns, taking input from a store assistant.
+You should use a `while` loop that runs continually to register hires and returns, taking input from a store assistant, e.g.
+
+```
+user_input = input( "Enter mode: [ 1 - renting ] or [ 2 - returning ]" )
+mode = int(user_intput)
+customer_name = input("What is the customer name?") 
+```
 
 Think about the needs of a real shop and decide what customer information would need to be stored, and what the shop needs to track.
 
